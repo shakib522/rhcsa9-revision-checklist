@@ -60,7 +60,9 @@ repo id repo name
 demo1 demo1 repo  
 demo2 demo2 repo  
 
-If other repo listed here, then default repository is not set.For set default repo, do this: 
-Suppose other repo name is rhel-9-for-x86_64-appstream-rpms and rhel-9-for-x86_64-baseos-rpms. 
-sudo dnf config-manager --disable rhel-9-for-x86_64-appstream-rpms
+If other repo listed here, then default repository is not set.For set default repo, do this:   
+Suppose other repo name is rhel-9-for-x86_64-appstream-rpms and rhel-9-for-x86_64-baseos-rpms.   
+```bash
+sudo dnf config-manager --disable rhel-9-for-x86_64-appstream-rpms  
 sudo dnf config-manager --disable rhel-9-for-x86_64-baseos-rpms
+```
