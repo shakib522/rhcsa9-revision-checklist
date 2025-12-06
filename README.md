@@ -278,6 +278,23 @@ tar cjvf /root/backup.tar.bz2 /usr/local
 ls
 ```
 
+# 1. Check current SELinux mode
+getenforce
+# or
+sestatus
+
+# 2. If not enforcing, change to enforcing
+# Temporarily (until reboot):
+setenforce 1
+
+# 3. Make permanent (edit config file):
+vim /etc/selinux/config
+# Change: SELINUX=enforcing
+
+# 4. Verify
+getenforce
+# Should output: Enforcing
+
 </details>
 
 ---
